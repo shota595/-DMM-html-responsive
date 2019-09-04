@@ -22,18 +22,39 @@
 }
 
 .content {
-  width: 280px;
+  width: 300px;
   text-align: left;
   float: left;
   border: 1px gray solid;
   padding: 9px;
-  box-sizing: content-box;
+  position: relative;
+  /* box-sizing: content-box; */
+}
+.image {
+  height: 200px;
+}
+.left-image {
+  background-image: url("img/flow01.png");
+  background-size: cover;
+  background-position: 0 200px;
+}
+.mid-image {
+  background-image: url("img/flow02.png");
+  background-size: cover;
+  background-position: 0 200px;
+}
+.right-image {
+  background-image: url("img/flow03.png");
+  background-size: cover;
+  background-position: 0 200px;
 }
 .step {
   background-color: orange;
   width: 50px;
   height: 30px;
   position: absolute;
+  top:0;
+  left: 0;
   text-align: center;
   line-height: 25px;
   color: #fafafa;
@@ -55,4 +76,63 @@ h4 {
 img {
   width: 280px;
   text-align: center;
+}
+
+
+@media screen and (max-width:768px) {
+    .main {
+      width: 100%;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .content {
+      float: none;
+      width: 95%;
+      margin: 0 auto;
+    }
+    .left-content {
+      margin-bottom: 20px;
+    }
+    .mid-content {
+      margin-bottom: 20px;
+    }
+    .
+
+    .image {
+      height: 80px;
+    }
+    .step {
+      width: 70px;
+      height: 40px;
+      line-height: 35px;
+    }
+    h4 {
+      font-size: 35px;
+      margin-top: 15px;
+    }
+    p {
+      width: 99%;
+      font-size: 30px
+    }
+    .left-image {
+      background-image: url("img/flow01.png");
+      background-size: cover;
+      height: 300px;
+      background-position: 0 300px;
+    }
+    .mid-image {
+      background-image: url("img/flow02.png");
+      background-size: cover;
+      height: 300px;
+      background-position: 0 300px;
+    }
+    .right-image {
+      background-image: url("img/flow03.png");
+      background-size: cover;
+      height: 300px;
+      background-position: 0 300px;
+    }
 }
